@@ -1,3 +1,13 @@
 @import './utils/breakpoints';
+@import './utils/mixin';
+@import './utils/variables';
 @import './base/common';
-@import './components/example';
+@import './components/01-header';
+@import './components/02-hero';
+@import './components/03-products';
+@import './components/04-about';
+@import './components/05-advantages';
+@import './components/06-gallery';
+@import './components/07-customers';
+@import './components/08-contacts';
+@import './components/09-footer';

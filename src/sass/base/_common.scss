@@ -1,5 +1,11 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+body {
+  font-family: var(--fontPrimary);
+  color: var(--colorPrimary);
+  background-color: var(--bgColorPrimary);
+}
+
 $global-list: h1, h2, h3, h4, h5, p, ul;
 @each $tag in $global-list {
   #{$tag} {
