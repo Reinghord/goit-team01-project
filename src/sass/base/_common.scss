@@ -1,0 +1,26 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+$global-list: h1, h2, h3, h4, h5, p, ul;
+@each $tag in $global-list {
+  #{$tag} {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
