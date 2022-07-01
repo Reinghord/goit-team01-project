@@ -1,0 +1,28 @@
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__customer-text{
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+}
+
+.review__customer-info{
+    margin-top: 36px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+
+    .review__customer-info::before{
+        align-items: center;
+    }
+}
+
+.review__slider-icon-list{
+    display: flex;
+    margin-top: 16px;
+}
