@@ -35,24 +35,20 @@
     position: relative;
     padding: 0 15px;
     background: repeating-linear-gradient(#fafafa,
-                                         #fafafa 29px,
-                                         #e1e1e1 29px,
+                                         #fafafa 29.5px,
+                                         #e1e1e1 29.5px,
                                          #e1e1e1 30.5px);
 
     @include mq(tab){
         padding: 0 48px;
-        background: repeating-linear-gradient(#fafafa,
-                    #fafafa 34px,
-                    #e1e1e1 34px,
-                    #e1e1e1 35.5px);
     }
 
     @include mq(desc){
         padding: 0 35px;
         background: repeating-linear-gradient(#fafafa,
-                    #fafafa 39px,
-                    #e1e1e1 39px,
-                    #e1e1e1 41px);
+                    #fafafa 28.5px,
+                    #e1e1e1 28.5px,
+                    #e1e1e1 29.5px);
     }
 
     &::before{
@@ -89,13 +85,13 @@
 
     @include mq(tab){
         font-size: 14px;
-        font-weight: calc(30.24 / 14);
+        line-height: calc(30.24 / 14);
         letter-spacing: 0.04em;
     }
 
     @include mq(desc){
         font-size: 16px;
-        font-weight: calc(29.76 / 16);
+        line-height: calc(29.76 / 16);
     }
 }
 
@@ -121,7 +117,7 @@
         left: 50%;
         top: -30px;
         transform: translatex(-50%);
-        content: "•  •  •";
+        content: "• • •";
         color: #c7133e;
     }
 }
