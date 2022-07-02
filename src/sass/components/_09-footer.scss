@@ -78,12 +78,13 @@ text-decoration: none;
 }
 
 .footer__years{
-    margin-bottom: 3px;
-    padding-right: 74px;
-    padding-left: 74px;
+    padding-bottom: 3px;
+    padding-right: 93px;
+    padding-left: 94px;
       color: #E1E1E1E1 ;
   border-top: 1px solid;
-  width: 100%;
+  width: 100vw;
+  padding-top: 16px;
 }
 
 
@@ -93,5 +94,4 @@ font-size: 14px;
 line-height: 152%;
 text-align: center;
 color: var(--colorSubText);
-margin-top: 16px;
 }
