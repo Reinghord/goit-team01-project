@@ -1,29 +1,29 @@
-.review{
+.review {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--colorText);
 }
 
-.undisplayed{
+.undisplayed {
     display: none;
 }
 
-.review__outer-container{
+.review__outer-container {
     margin-top: 32px;
     padding: 40px 55px;
     padding-bottom: 40px;
-    
+
     background-color: #fafafa;
 
-    @include mq(tab){
+    @include mq(tab) {
         margin: 60px;
         margin-top: 20px;
         margin-bottom: 0;
         padding: 40px 6px;
     }
 
-    @include mq(desc){
+    @include mq(desc) {
         margin: 100px;
         margin-top: 16px;
         margin-bottom: 0;
@@ -31,27 +31,27 @@
     }
 }
 
-.review__inner-container{
+.review__inner-container {
     position: relative;
     padding: 0 15px;
     background: repeating-linear-gradient(#fafafa,
-                                         #fafafa 29.5px,
-                                         #e1e1e1 29.5px,
-                                         #e1e1e1 30.5px);
+            #fafafa 29.5px,
+            #e1e1e1 29.5px,
+            #e1e1e1 30.5px);
 
-    @include mq(tab){
+    @include mq(tab) {
         padding: 0 48px;
     }
 
-    @include mq(desc){
+    @include mq(desc) {
         padding: 0 35px;
         background: repeating-linear-gradient(#fafafa,
-                    #fafafa 28.5px,
-                    #e1e1e1 28.5px,
-                    #e1e1e1 29.5px);
+                #fafafa 28.5px,
+                #e1e1e1 28.5px,
+                #e1e1e1 29.5px);
     }
 
-    &::before{
+    &::before {
         position: absolute;
         z-index: 1;
         content: "";
@@ -63,18 +63,18 @@
         height: 40px;
         background-image: url(../images/07-reviews/qoutes.svg);
         background-position: center;
-        background-size:cover;
+        background-size: cover;
 
         fill: #e1e1e1;
 
-        @include mq(tab-only){
+        @include mq(tab-only) {
             width: 60px;
             height: 44px;
         }
     }
 }
 
-.review__customer-text{
+.review__customer-text {
     position: relative;
     z-index: 2;
 
@@ -83,36 +83,37 @@
     font-size: 12px;
     line-height: 255%;
 
-    @include mq(tab){
+    @include mq(tab) {
         font-size: 14px;
         line-height: calc(30.24 / 14);
         letter-spacing: 0.04em;
     }
 
-    @include mq(desc){
+    @include mq(desc) {
         font-size: 16px;
         line-height: calc(29.76 / 16);
     }
 }
 
-.review__customer-info{
+.review__customer-info {
     position: relative;
+
     margin-top: 36px;
     font-weight: 500;
     font-size: 14px;
     line-height: 186%;
 
-    @include mq(tab){
+    @include mq(tab) {
         font-size: 16px;
         line-height: calc(29.76 / 16);
     }
 
-    @include mq(tab){
+    @include mq(tab) {
         font-size: 20px;
         line-height: calc(37.2 / 20);
     }
 
-    &::before{
+    &::before {
         position: absolute;
         left: 50%;
         top: -30px;
@@ -122,18 +123,41 @@
     }
 }
 
-.review__slider-icon-switch{
+.review__slider-icon-switch {
     display: flex;
     gap: 18px;
     margin-top: 16px;
     list-style: none;
 }
 
-.review__slider-icon{
+.review__slider-icon {
     width: 12px;
     height: 12px;
 
     border-radius: 50%;
 
     background-color: #d9d9d9;
+}
+
+//////Swiper///
+ 
+.swiper-wrapper{
+    padding-bottom: 52px;
+}
+
+.swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    border-radius: 0;
+    background-color: transparent;
+    background-image: url(../images/07-reviews/home.svg);
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 9px;
 }
