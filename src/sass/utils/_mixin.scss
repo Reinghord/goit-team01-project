@@ -48,5 +48,5 @@
 
 @mixin transition {
   transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition-timing-function: ease-in-out;
 }
