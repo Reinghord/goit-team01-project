@@ -27,7 +27,7 @@
     ".  .  i5 .  .  .  . ";
 
     @include mq(tab) {
-        gap: 2px;
+        gap: 4px;
     }
 
     @include mq(desc) {
