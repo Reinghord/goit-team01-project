@@ -45,3 +45,8 @@
   padding: 0;
   position: absolute;
 }
+
+@mixin transition {
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}

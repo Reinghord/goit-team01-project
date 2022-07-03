@@ -31,3 +31,16 @@ $global-list: h1, h2, h3, h4, h5, p, ul;
     width: $desktop;
   }
 }
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
