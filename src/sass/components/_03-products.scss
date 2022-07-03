@@ -325,6 +325,7 @@
 }
 
 .products__subtext {
+  margin-inline: auto;
   font-weight: 700;
   font-size: 14px;
   line-height: 152%;
@@ -335,9 +336,12 @@
   padding-right: 39px;
   margin-top: 70px;
 
+  max-width: calc(100vw - 40px);
+
   @media screen and (min-width: $tablet) {
     line-height: 1.79;
     padding-inline: 32px;
+    max-width: 224px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -346,6 +350,7 @@
     letter-spacing: 0.04em;
     padding-left: 64px;
     padding-right: 63px;
+    max-width: 368px;
   }
 }
 
@@ -353,7 +358,16 @@
   border: 0px;
   padding: 0px;
   background-color: transparent;
-
+  background-image: url(../images/03-products/arrow-right.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/03-products/arrow-right@2x.png);
+    background-size: contain;
+  }
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
   display: block;
   margin-inline: auto;
   margin-top: 32px;
