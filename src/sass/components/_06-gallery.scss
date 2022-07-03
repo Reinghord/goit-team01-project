@@ -1,0 +1,62 @@
+.gallery-container{
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#fff5f6 45%,
+                var(--colorPrimary) 45% 65%);
+}
+
+.gallery-content{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ".  .  i4 i4 .  i8 . "
+    ".  i2 i4 i4 i6 i8 . "
+    "i1 i2 i4 i4 i6 i9 i10"
+    "i1 i3 i4 i4 i7 i9 i10"
+    ".  i3 i5 .  i7 .  . "
+    ".  .  i5 .  .  .  . ";
+
+    @include mq(tab) {
+        gap: 4px;
+    }
+
+    @include mq(desc) {
+        gap: 8px;
+    }
+}
+
+.gallery-content__img{
+    display: block;
+    &:nth-child(1){
+        grid-area: i1;
+    }
+    &:nth-child(2){
+        grid-area: i2;
+    }
+    &:nth-child(3){
+        grid-area: i3;
+    }
+    &:nth-child(4){
+        grid-area: i4;
+    }
+    &:nth-child(5){
+        grid-area: i5;
+    }
+    &:nth-child(6){
+        grid-area: i6;
+    }
+    &:nth-child(7){
+        grid-area: i7;
+    }
+    &:nth-child(8){
+        grid-area: i8;
+    }
+    &:nth-child(9){
+        grid-area: i9;
+    }
+    &:nth-child(10){
+        grid-area: i10;
+    }
+}
