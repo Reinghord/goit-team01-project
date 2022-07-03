@@ -13,9 +13,13 @@
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/gh/tomik23/show-more@1.1.4/dist/css/show-more.min.css"
     />
     <link rel="stylesheet" href="./css/simple-lightbox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -33,6 +37,10 @@
     </main>
     <include src="./partials/09-footer.html"></include>
     <script src="./menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tomik23/show-more@1.1.4/dist/js/showMore.min.js"></script>
+    <script>
+      new ShowMore('.products__subtext');
+    </script>
     <script src="./simple-lightbox.min.js"></script>
     <script>
       var lightbox = new SimpleLightbox('.gallery a', {
