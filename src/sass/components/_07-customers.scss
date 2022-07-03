@@ -41,14 +41,14 @@
 
     @include mq(tab) {
         padding: 0 48px;
+        background: repeating-linear-gradient(#fafafa,
+                    #fafafa 28.5px,
+                    #e1e1e1 28.5px,
+                    #e1e1e1 29.5px);
     }
 
     @include mq(desc) {
         padding: 0 35px;
-        background: repeating-linear-gradient(#fafafa,
-                #fafafa 28.5px,
-                #e1e1e1 28.5px,
-                #e1e1e1 29.5px);
     }
 
     &::before {
