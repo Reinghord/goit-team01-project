@@ -1,0 +1,98 @@
+
+<section class="hero">
+    <div class="hero__container container">
+
+        <div class="circle"></div>
+
+        <ul class="info__list">
+            <li class="info__item">
+                <span class="info__shape"></span>
+                <p class="info__number">16</p>
+                <p class="info__title">cafes</p>
+            </li>
+
+            <li class="info__item">
+                <span class="info__shape"></span>
+                <p class="info__number">23</p>
+                <p class="info__title">food trucks</p>
+            </li>
+        </ul>
+        <picture>
+            <source srcset="
+                images/01-header/icecream-desk-min.png 1x,
+                images/01-header/icecream-desk-2x-min.png 2x"
+                media="(min-width: 1200px)">
+
+            <source srcset="
+                ./images/01-header/icecream-tab-min.png 1x,
+                ./images/01-header/icecream-tab-2x-min.png 2x"
+                media="(min-width: 768px)">
+
+            <source srcset="
+                ./images/01-header/icecream-mob-min.png 1x,
+                ./images/01-header/icecream-mob-2x-min.png 2x"
+                media="(min-width: 320px)">
+
+            <img class="hero__image--icecream" src="./images/01-header/icecream-desk-min.png" alt="icecream">
+
+        </picture>
+        <picture>
+            
+            <source srcset="
+                ./images/01-header/girl-desk-min.png 1x,
+                ./images/01-header/girl-desk-2x-min.png 2x"
+                media="(min-width: 1200px)">
+            <source srcset="
+                ./images/01-header/girl-tab-min.png 1x,
+                ./images/01-header/girl-tab-2x-min.png 2x"
+                media="(min-width: 768px)">
+
+            <img class="hero__image--girl" src="./images/01-header/girl-desk-min.png" alt="girl wiwth icecream">
+
+        </picture>
+
+        <h1 class="hero__title">ice cream made with <span class="hero__title--additional">passion</span></h1>
+        
+        <ul class="hero__list">
+            <li class="hero__item">
+                <a class="hero__link" href="">Products</a>
+            </li>
+
+            <li class="hero_item">
+                <a class="hero__link hero--link--secondary" href="">How its made?</a>
+            </li>
+        </ul>
+
+        <div class="hero__info">
+            <picture>
+                <source
+                srcset="
+                    ./images/01-header/milk-desk-min.png 1x,
+                    ./images/01-header/milk-desk-2x-min.png 2x"
+                    media="(min-width: 1200px)"/>
+
+                <source srcset="
+                    ./images/01-header/milk-tab-min.png 1x,
+                    ./images/01-header/milk-tab-2x-min.png 2x"
+                    media="(min-width: 768px)"/>
+                <img
+                class="hero-img--milk"
+                src="./images/01-header/milk-desk-min.png"
+                alt="Eco Milk"
+                />
+            </picture>
+
+            <div class="hero__info-wrap">
+                
+                <p class="hero__infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+
+                <button class="btn-info btn">
+                    <svg width = "20" height = "12">
+                        <use href = "./images/01-header/icons.svg#arrow-right"></use>
+                    </svg>
+
+                </button>
+            </div>
+        </div>      
+    </div>
+</section>
