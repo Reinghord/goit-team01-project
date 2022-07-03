@@ -8,7 +8,7 @@
 
   refs.openMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
-  refs.menuList.addEventListener('click', removeMenu);
+  // refs.menuList.addEventListener('click', removeMenu);
 
   function toggleMenu() {
     refs.menu.classList.toggle('is-hidden');
@@ -18,4 +18,15 @@
     refs.menu.classList.add('is-hidden');
     document.body.classList.remove('no-scroll');
   }
+
+  document.addEventListener('click', e => {
+    const header = document.querySelector('.header');
+    const withinBoundaries = e.composedPath().includes(header);
+    const mobMenu = document.querySelector('.mob-menu');
+    const withinBoundariesMenu = e.composedPath().includes(mobMenu);
+
+    if (!withinBoundaries && !withinBoundariesMenu) {
+      removeMenu();
+    }
+  });
 })();
