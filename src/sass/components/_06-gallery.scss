@@ -1,12 +1,21 @@
 .gallery-container{
     padding: 60px 0;
-    display: flex;
-    justify-content: center;
     background: linear-gradient(#fff5f6 45%,
                 var(--colorPrimary) 45% 65%);
+
+    @include mq(tab){
+        padding-top: 64px;
+        display: flex;
+        justify-content: center;
+    }
+
+    @include mq(desc){
+        padding: 120px 0;
+    }
 }
 
 .gallery-content{
+    padding: 0 5px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: auto;
@@ -58,5 +67,9 @@
     }
     &:nth-child(10){
         grid-area: i10;
+    }
+
+    & img{
+        width: 100%;
     }
 }
