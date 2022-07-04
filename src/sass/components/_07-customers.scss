@@ -8,6 +8,10 @@
     @include mq(desc){
         padding-bottom: 120px;
     }
+
+    & h1{
+        display: none;
+    }
 }
 
 .review {

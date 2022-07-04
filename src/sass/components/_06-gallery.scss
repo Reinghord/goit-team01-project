@@ -12,6 +12,10 @@
     @include mq(desc){
         padding: 120px 0;
     }
+
+    & h1{
+        display: none;
+    }
 }
 
 .gallery-content{
