@@ -7,8 +7,8 @@
   @include mq(tab) {
     background: linear-gradient(
       180deg,
-      rgba(255, 255, 255, 1) 44%,
-      rgba(255, 245, 246, 1) 44%
+      rgba(255, 255, 255, 1) 45.5%,
+      rgba(255, 245, 246, 1) 45.5%
     );
   }
   @include mq(desc) {
@@ -20,21 +20,22 @@
   }
 }
 
+.location__title {
+  @include visually-hidden;
+}
+
 .location__list {
-  list-style: none;
-  margin-top: 60px;
   margin-bottom: 32px;
+  list-style: none;
   @include mq(tab) {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-    margin-top: 80px;
     margin-bottom: 60px;
   }
   @include mq(desc) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 120px;
   }
 }
 
@@ -42,7 +43,7 @@
   padding: 40px 32px;
   //   width: 100%;
   flex-shrink: 0;
-  background: #ffffff;
+  background: var(--colorPrimary);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   @include mq(tab) {
@@ -62,22 +63,20 @@
   }
 }
 
-.location__title {
-  width: 80px;
-  height: 16px;
-  background: #f0d1a5;
+.location__point {
+  display: inline;
+  align-items: center;
+  padding: 4px 25px;
+  background: var(--bgColorProductsSecondary);
   border-radius: 4px;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  margin-bottom: 20px;
+  color: var(--colorPrimary);
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
-  //   position: relative;
   @include mq(tab) {
-    max-width: 138px;
-    height: 28px;
+    padding: 8px 17px;
     margin-bottom: 32px;
     font-size: 16px;
     line-height: 1.86;
@@ -86,24 +85,7 @@
   }
 }
 
-// .location__title-name {
-//   //   font-weight: 500;
-//   //   font-size: 12px;
-//   //   line-height: 1.83;
-//   //   position: absolute;
-//   //   top: 0;
-//   //   left: 0;
-
-//   @include mq(tab) {
-//     font-size: 16px;
-//     line-height: 1.86;
-//     text-align: center;
-//     letter-spacing: 0.04em;
-//   }
-// }
-
 .location__LosAgneles {
-  width: 130px;
   background-color: #c2e297;
 }
 
@@ -113,7 +95,8 @@
   font-size: 12px;
   line-height: 1.83;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: var(--colorText);
+  margin-top: 20px;
   margin-bottom: 8px;
   @include mq(tab) {
     font-size: 14px;
@@ -135,13 +118,17 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  color: #907e82;
+  color: var(--colorSubText);
   margin-bottom: 24px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    max-width: 416px;
+  }
   @include mq(tab) {
     font-size: 14px;
     line-height: 1.66;
   }
   @include mq(desc) {
+    max-width: 243px;
     font-size: 16px;
     line-height: 1.83;
   }
@@ -180,7 +167,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
-  color: #000000;
+  color: var(--colorText);
   @include mq(tab) {
     font-size: 14px;
     line-height: 1.86;
@@ -196,7 +183,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
-  color: #ffa5ba;
+  color: var(--colorLabel);
   margin-bottom: 8px;
   @include mq(tab) {
     font-size: 14px;
@@ -214,8 +201,13 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  color: #907e82;
+  color: var(--colorSubText);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.77, 0, 0.175, 1);
+  &:hover,
+  &:focus {
+    color: var(--colorSecondary);
+  }
   @include mq(tab) {
     font-size: 14px;
     line-height: 183%;
@@ -227,14 +219,12 @@
 }
 
 .location__button {
-  margin-bottom: 40px;
   @include mq(tab) {
     display: flex;
     justify-content: center;
     gap: 14.5px;
   }
   @include mq(desc) {
-    margin-bottom: 120px;
     gap: 12px;
   }
 }
@@ -274,6 +264,11 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+  transition: background-color 250ms cubic-bezier(0.77, 0, 0.175, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--btnBgColorHover);
+  }
   @include mq(tab) {
     width: 174px;
   }
@@ -290,9 +285,9 @@
 }
 
 .location__button-icon-loc {
-  fill: #d41342;
+  fill: var(--iconColorSecondary);
 }
 
 .location__button-icon-fran {
-  fill: #ffffff;
+  fill: var(--iconColorTertiary);
 }
