@@ -13,9 +13,9 @@
         padding: 120px 0;
     }
 
-    // & h2{
-    //     @include visually-hidden;
-    // }
+    & .gallery-title{
+        @include visually-hidden;
+    }
 }
 
 .gallery-content{

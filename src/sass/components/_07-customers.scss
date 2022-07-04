@@ -9,7 +9,7 @@
         padding-bottom: 120px;
     }
 
-    & h2{
+    & .review-title{
         @include visually-hidden;
     }
 }
