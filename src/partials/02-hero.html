@@ -1,111 +1,132 @@
+<section class="hero" id="hero">
+  <div class="hero__container container">
+    <div class="circle"></div>
 
-<section class="hero">
-    <div class="hero__container container">
+    <ul class="info__list">
+      <li class="info__item">
+        <span class="info__shape"></span>
+        <p class="info__number">16</p>
+        <p class="info__title">cafes</p>
+      </li>
 
-        <div class="circle"></div>
+      <li class="info__item">
+        <span class="info__shape"></span>
+        <p class="info__number">23</p>
+        <p class="info__title">food trucks</p>
+      </li>
+    </ul>
 
-        <ul class="info__list">
-            <li class="info__item">
-                <span class="info__shape"></span>
-                <p class="info__number">16</p>
-                <p class="info__title">cafes</p>
-            </li>
+    <picture>
+      <source
+        srcset="
+          images/01-header/icecream-desk-min.png    1x,
+          images/01-header/icecream-desk-2x-min.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
 
-            <li class="info__item">
-                <span class="info__shape"></span>
-                <p class="info__number">23</p>
-                <p class="info__title">food trucks</p>
-            </li>
-        </ul>
+      <source
+        srcset="
+          ./images/01-header/icecream-tab-min.png    1x,
+          ./images/01-header/icecream-tab-2x-min.png 2x
+        "
+        media="(min-width: 768px)"
+      />
 
-        <picture>
-            <source srcset="
-                images/01-header/icecream-desk-min.png 1x,
-                images/01-header/icecream-desk-2x-min.png 2x"
-                media="(min-width: 1200px)">
+      <source
+        srcset="
+          ./images/01-header/icecream-mob-min.png    1x,
+          ./images/01-header/icecream-mob-2x-min.png 2x
+        "
+        media="(min-width: 320px)"
+      />
 
-            <source srcset="
-                ./images/01-header/icecream-tab-min.png 1x,
-                ./images/01-header/icecream-tab-2x-min.png 2x"
-                media="(min-width: 768px)">
+      <img
+        class="hero__image--icecream"
+        src="./images/01-header/icecream-desk-min.png"
+        alt="icecream"
+        loading="lazy"
+        data-aos="fade-up"
+      />
+    </picture>
 
-            <source srcset="
-                ./images/01-header/icecream-mob-min.png 1x,
-                ./images/01-header/icecream-mob-2x-min.png 2x"
-                media="(min-width: 320px)">
+    <picture>
+      <source
+        srcset="
+          ./images/01-header/girl-desk-min.png    1x,
+          ./images/01-header/girl-desk-2x-min.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/01-header/girl-tab-min.png    1x,
+          ./images/01-header/girl-tab-2x-min.png 2x
+        "
+        media="(min-width: 768px)"
+      />
 
-            <img class="hero__image--icecream"
-                src="./images/01-header/icecream-desk-min.png"
-                alt="icecream"
-                loading = "lazy"
-                data-aos="fade-up">
-                
+      <img
+        class="hero__image--girl"
+        src="./images/01-header/girl-desk-min.png"
+        alt="girl wiwth icecream"
+        loading="lazy"
+        data-aos="fade-left"
+      />
+    </picture>
 
-        </picture>
-        
-        <picture>
-            
-            <source srcset="
-                ./images/01-header/girl-desk-min.png 1x,
-                ./images/01-header/girl-desk-2x-min.png 2x"
-                media="(min-width: 1200px)">
-            <source srcset="
-                ./images/01-header/girl-tab-min.png 1x,
-                ./images/01-header/girl-tab-2x-min.png 2x"
-                media="(min-width: 768px)">
+    <h1 class="hero__title">
+      ice cream made with <span class="hero__title--additional">passion</span>
+    </h1>
 
-                
-                    <img class="hero__image--girl" src="./images/01-header/girl-desk-min.png"
-                    alt="girl wiwth icecream"
-                    loading = "lazy"
-                    data-aos="fade-left">
-                    
+    <ul class="hero__list">
+      <li class="hero__item">
+        <a class="hero__link" href="#products">Products</a>
+      </li>
 
+      <li class="hero_item">
+        <a class="hero__link hero--link--secondary" href="#about"
+          >How its made?</a
+        >
+      </li>
+    </ul>
 
-        </picture>
+    <div class="hero__info">
+      <picture>
+        <source
+          srcset="
+            ./images/01-header/milk-desk-min.png    1x,
+            ./images/01-header/milk-desk-2x-min.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
 
-        <h1 class="hero__title">ice cream made with <span class="hero__title--additional">passion</span></h1>
-        
-        <ul class="hero__list">
-            <li class="hero__item">
-                <a class="hero__link" href="">Products</a>
-            </li>
+        <source
+          srcset="
+            ./images/01-header/milk-tab-min.png    1x,
+            ./images/01-header/milk-tab-2x-min.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          class="hero-img--milk"
+          src="./images/01-header/milk-desk-min.png"
+          alt="Eco Milk"
+          loading="lazy"
+          data-aos="fade-right"
+        />
+      </picture>
 
-            <li class="hero_item">
-                <a class="hero__link hero--link--secondary" href="">How its made?</a>
-            </li>
-        </ul>
-
-        <div class="hero__info">
-            <picture>
-                <source
-                srcset="
-                    ./images/01-header/milk-desk-min.png 1x,
-                    ./images/01-header/milk-desk-2x-min.png 2x"
-                    media="(min-width: 1200px)"/>
-
-                <source srcset="
-                    ./images/01-header/milk-tab-min.png 1x,
-                    ./images/01-header/milk-tab-2x-min.png 2x"
-                    media="(min-width: 768px)"/>
-                <img
-                class="hero-img--milk"
-                src="./images/01-header/milk-desk-min.png"
-                alt="Eco Milk"
-                loading = "lazy"
-                data-aos="fade-right">
-                
-            </picture>
-
-            <div class="hero__info-wrap">
-                
-                <p class="hero__infotext"
-                data-config='{ "btnClass": "hero__button--showmore", "type": "text", "limit": 102, "more": " "}'
-                >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, dolores?
-            </p>
-            </div>
-        </div>      
+      <div class="hero__info-wrap">
+        <p
+          class="hero__infotext"
+          data-config='{ "btnClass": "hero__button--showmore", "type": "text", "limit": 102, "more": " "}'
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Sequi, dolores?
+        </p>
+      </div>
     </div>
+  </div>
 </section>
