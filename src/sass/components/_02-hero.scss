@@ -19,6 +19,7 @@
     @include mq(desc) {
         padding-top: 60px;
         padding-bottom: 60px;
+        padding-inline: 16px;
     }
   
 }
@@ -40,13 +41,14 @@
     color: #FFFFFF;
 
     @include mq(tab) {
-        margin-top: 102px;
+        margin-top: 87px;
         font-size: 22px;
         line-height: 1.18;
         max-width: 162px;
         
     }
     @include mq (desc) {
+        margin-top: 110px;
         font-size: 38px;
         line-height: 1.15;
         max-width: 277px;
@@ -70,9 +72,7 @@
     }
     @include mq(desc) {
         font-size: 58px;
-    }
-
-    
+    } 
 }
 
 .circle {
@@ -158,7 +158,7 @@
 
 .info__list {
     position: absolute;
-    top: 92px;
+    top: 94px;
     right: 32px;
     display: none;
     @include mq (tab) {
@@ -166,7 +166,7 @@
     }
     @include mq (desc) {
         top:156px;
-        right: 15px;     
+        right: 25px;     
     }
 }
 
@@ -231,6 +231,9 @@ color:var(--colorSecondary);
         bottom: 0;
         right: 32px;
     }
+        @include mq(desc) {
+            right: 16px;
+        }
 }
 
 .hero__image--icecream {
