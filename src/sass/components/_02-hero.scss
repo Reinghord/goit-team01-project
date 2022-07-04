@@ -251,16 +251,24 @@ color:var(--colorSecondary);
 }
 
 .hero__info {
+    position: relative;
     display: none;
     @include mq(tab) {
         display: flex;
         align-items: center;
+        margin-top: 20px;
+     @include mq(desc) {
+         margin-top: 40px;
+     }   
         
     }
 }
 
+
+
 .hero__infotext {
-    position: relative;
+    position: absolute;
+    top: 61px;
     font-family: var(--fontPrimary);
     font-size: 8px;
     line-height: 150%;
@@ -273,46 +281,54 @@ color:var(--colorSecondary);
     font-size: 14px;
     line-height: 1.4;
     min-width: 200px;
+    top: 68px;
     }
     @include mq(desc){
         line-height: 1.5;
     }
 }
 
-.btn-info {
-    display: flex;
-    border-radius:50%;
-    width: 18px;
-    height: 18px;
-    fill: var(--colorSecondary);
-    background-color: var(--bgColorPrimary);
-    align-items: center;
+// .btn-info {
+//     display: flex;
+//     border-radius:50%;
+//     width: 18px;
+//     height: 18px;
+//     fill: var(--colorSecondary);
+//     background-color: var(--bgColorPrimary);
+//     align-items: center;
 
-    &:hover,
-    &:focus {
-        background-color: var(--bgColorPrimary);
-    }
-}
+//     &:hover,
+//     &:focus {
+//         background-color: var(--bgColorPrimary);
+//     }
+// }
 
 .hero__button--showmore {
-        position: absolute;
-        top:60;
-        left: 0;
 
-        border: 0px;
+
+        border: 5px;
         padding: 0px;
         background-color: transparent;
+        background-size: contain;
         background-image: url(../images/03-products/arrow-right.png);
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
           background-image: url(../images/03-products/arrow-right@2x.png);
-          background-size: contain;
+          
         }
         background-repeat: no-repeat;
-        height: 40px;
-        width: 40px;
+        height: 18px;
+        width: 18px;
         display: block;
-        margin-inline: auto;
-        margin-top: 32px;
+        margin-top: 7px;
+        @include mq(desc) {
+            margin-top: 20px;
+            height: 26px;
+            width: 26px;
+        }
+        &::hover,
+        &::focus {
+            background-color: var(--btnBgColorHover);
+        }
 }
