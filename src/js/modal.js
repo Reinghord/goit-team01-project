@@ -13,13 +13,21 @@
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
-  refs.openModalBtnHdr.addEventListener('click', toggleModal);
-  refs.closeModalBtnHdr.addEventListener('click', toggleModal);
-  refs.openModalBtnAbt.addEventListener('click', toggleModal);
-  refs.closeModalBtnAbt.addEventListener('click', toggleModal);
+  refs.openModalBtnHdr.addEventListener('click', toggleModalHeader);
+  refs.closeModalBtnHdr.addEventListener('click', toggleModalHeader);
+  refs.openModalBtnAbt.addEventListener('click', toggleModalAbt);
+  refs.closeModalBtnAbt.addEventListener('click', toggleModalAbt);
 
   function toggleModal() {
     document.body.classList.toggle('modal-open');
     refs.modal.classList.toggle('is-hidden');
+  }
+  function toggleModalHeader() {
+    document.body.classList.toggle('modal-open');
+    refs.modalHeader.classList.toggle('is-hidden');
+  }
+  function toggleModalAbt() {
+    document.body.classList.toggle('modal-open');
+    refs.modalAbout.classList.toggle('is-hidden');
   }
 })();
