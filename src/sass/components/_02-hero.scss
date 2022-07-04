@@ -43,6 +43,8 @@
         margin-top: 102px;
         font-size: 22px;
         line-height: 1.18;
+        max-width: 162px;
+        
     }
     @include mq (desc) {
         font-size: 38px;
@@ -116,8 +118,8 @@
     font-size: 8px;
     line-height: 1.25;
     text-align: center;
-    padding: 7px 22px;
     min-height: 24px;
+    padding: 7px 15px;
 
 
     border-radius: 20px;
@@ -197,7 +199,7 @@ color:var(--colorSecondary);
 
     font-size: 8px;
     line-height: 1.25;
-    text-align: center;
+    text-align: right;
 
     color: var(--colorPrimary);
 
@@ -234,7 +236,7 @@ color:var(--colorSecondary);
 .hero__image--icecream {
     position: absolute;
     bottom: -158px;
-    right: 70px;
+    right: 32px;
     @include mq(tab) {
         bottom: 0;
         left:322px;
@@ -269,6 +271,9 @@ color:var(--colorSecondary);
     line-height: 1.4;
     min-width: 200px;
     }
+    @include mq(desc){
+        line-height: 1.5;
+    }
 }
 
 .btn-info {
@@ -282,7 +287,7 @@ color:var(--colorSecondary);
 
     &:hover,
     &:focus {
-        background-color: var(  --bgColorPrimary);
+        background-color: var(--bgColorPrimary);
     }
 }
 
