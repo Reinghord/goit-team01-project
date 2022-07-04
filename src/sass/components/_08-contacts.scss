@@ -77,7 +77,6 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
-  //   position: relative;
   @include mq(tab) {
     padding: 8px 17px;
     margin-bottom: 32px;
@@ -86,12 +85,6 @@
     text-align: center;
     letter-spacing: 0.04em;
   }
-}
-
-.location__title-name {
-  //   display: inline;
-  //   align-items: center;
-  //   justify-content: baseline;
 }
 
 .location__LosAgneles {
