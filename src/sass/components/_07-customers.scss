@@ -9,8 +9,8 @@
         padding-bottom: 120px;
     }
 
-    & h1{
-        display: none;
+    & h2{
+        @include visually-hidden;
     }
 }
 
