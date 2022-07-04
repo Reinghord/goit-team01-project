@@ -17,6 +17,7 @@
                 <p class="info__title">food trucks</p>
             </li>
         </ul>
+
         <picture>
             <source srcset="
                 images/01-header/icecream-desk-min.png 1x,
@@ -33,12 +34,15 @@
                 ./images/01-header/icecream-mob-2x-min.png 2x"
                 media="(min-width: 320px)">
 
-            <img class="hero__image--icecream animate__animated animate__bounce"
+            <img class="hero__image--icecream"
                 src="./images/01-header/icecream-desk-min.png"
                 alt="icecream"
-                loading = "lazy">
+                loading = "lazy"
+                data-aos="fade-up">
+                
 
         </picture>
+        
         <picture>
             
             <source srcset="
@@ -50,13 +54,17 @@
                 ./images/01-header/girl-tab-2x-min.png 2x"
                 media="(min-width: 768px)">
 
-            <img class="hero__image--girl" src="./images/01-header/girl-desk-min.png"
-            alt="girl wiwth icecream"
-            loading = "lazy">
+                
+                    <img class="hero__image--girl" src="./images/01-header/girl-desk-min.png"
+                    alt="girl wiwth icecream"
+                    loading = "lazy"
+                    data-aos="fade-left">
+                    
+
 
         </picture>
 
-        <h1 class="hero__title animate__bounce">ice cream made with <span class="hero__title--additional">passion</span></h1>
+        <h1 class="hero__title">ice cream made with <span class="hero__title--additional">passion</span></h1>
         
         <ul class="hero__list">
             <li class="hero__item">
@@ -85,7 +93,8 @@
                 src="./images/01-header/milk-desk-min.png"
                 alt="Eco Milk"
                 loading = "lazy"
-                />
+                data-aos="fade-right">
+                
             </picture>
 
             <div class="hero__info-wrap">
