@@ -1,2 +1,2 @@
 !function(){var e={openMenuBtn:document.querySelector("[data-menu-open]"),closeMenuBtn:document.querySelector("[data-menu-close]"),menu:document.querySelector("[data-menu]"),menuList:document.querySelector(".mobile-menu__list")};function n(){e.menu.classList.toggle("is-hidden"),document.body.classList.toggle("no-scroll")}e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",n),document.addEventListener("click",(function(n){var t=document.querySelector(".header"),o=n.composedPath().includes(t),c=document.querySelector(".mob-menu"),u=n.composedPath().includes(c);o||u||(e.menu.classList.add("is-hidden"),document.body.classList.remove("no-scroll"))}))}();
-//# sourceMappingURL=index.4b05de93.js.map
+//# sourceMappingURL=index.a3e67f11.js.map
