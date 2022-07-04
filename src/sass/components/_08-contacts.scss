@@ -66,7 +66,7 @@
 .location__point {
   display: inline;
   align-items: center;
-  padding: 4px 25px;
+  padding: 0px 24px;
   background: var(--bgColorProductsSecondary);
   border-radius: 4px;
   text-align: center;
@@ -76,12 +76,14 @@
   font-size: 12px;
   line-height: 1.83;
   @include mq(tab) {
-    padding: 8px 17px;
+    padding: 3.5px 17px;
     margin-bottom: 32px;
     font-size: 16px;
     line-height: 1.86;
     text-align: center;
     letter-spacing: 0.04em;
+
+    border-radius: 6px;
   }
 }
 
@@ -292,7 +294,7 @@
   fill: var(--iconColorTertiary);
 }
 
-.backdrop-location{
+.backdrop-location {
   position: fixed;
   top: 0;
   left: 0;
@@ -300,14 +302,14 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 4;
-
+  transition-property: visibility, opacity;
+  @include transition;
   &.is-hidden {
     visibility: hidden;
+    opacity: 0;
     pointer-events: none;
   }
 }
-
-
 
 .modal-location {
   position: absolute;
@@ -316,7 +318,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
 
-  @include mq(tab){
+  @include mq(tab) {
     width: 70%;
   }
 }
@@ -325,16 +327,16 @@
   width: 100%;
   height: 400px;
 
-  @include mq(tab){
+  @include mq(tab) {
     height: 500px;
   }
 
-  @include mq(desc){
+  @include mq(desc) {
     height: 600px;
   }
 }
 
-.modal-location__close-btn{
+.modal-location__close-btn {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -355,7 +357,7 @@
   }
 }
 
-.modal-location__close{
+.modal-location__close {
   fill: var(--colorSecondary);
   transition-property: fill;
   @include transition;
