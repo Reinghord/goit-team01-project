@@ -294,4 +294,25 @@ color:var(--colorSecondary);
     }
 }
 
+.hero__button--showmore {
+        position: absolute;
+        top:60;
+        left: 0;
 
+        border: 0px;
+        padding: 0px;
+        background-color: transparent;
+        background-image: url(../images/03-products/arrow-right.png);
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/03-products/arrow-right@2x.png);
+          background-size: contain;
+        }
+        background-repeat: no-repeat;
+        height: 40px;
+        width: 40px;
+        display: block;
+        margin-inline: auto;
+        margin-top: 32px;
+}
