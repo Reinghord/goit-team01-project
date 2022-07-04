@@ -8,6 +8,10 @@
     @include mq(desc){
         padding-bottom: 120px;
     }
+
+    & .review-title{
+        @include visually-hidden;
+    }
 }
 
 .review {

@@ -12,6 +12,10 @@
     @include mq(desc){
         padding: 120px 0;
     }
+
+    & .gallery-title{
+        @include visually-hidden;
+    }
 }
 
 .gallery-content{
