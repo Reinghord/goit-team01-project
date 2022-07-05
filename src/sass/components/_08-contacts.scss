@@ -247,12 +247,19 @@
   font-size: 16px;
   line-height: 1.31;
   margin-bottom: 10px;
+
+  transition-property: background-color;
+  @include transition;
   @include mq(tab) {
     margin-bottom: 0;
     width: 191px;
   }
   @include mq(desc) {
     width: 198px;
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--btnBgColorHoverSecondary);
   }
 }
 

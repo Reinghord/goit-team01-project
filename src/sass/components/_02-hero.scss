@@ -1,291 +1,280 @@
-
-.hero{
-    background-color: var(--bgColorHero);
-    padding-bottom: 158px;
-    overflow: hidden;
-    @include mq(tab) {
-        padding: 0;
-    }
+.hero {
+  background-color: var(--bgColorHero);
+  padding-bottom: 158px;
+  overflow: hidden;
+  @include mq(tab) {
+    padding: 0;
+  }
 }
 
 .hero__container {
-    position: relative;
-    @include mq (tab) {
-        padding-top: 15px;
-        padding-bottom: 16px;
-        padding-right: 32px;
-        padding-left: 32px;
-    }
-    @include mq(desc) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        padding-inline: 16px;
-    }
-  
+  position: relative;
+  @include mq(tab) {
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  @include mq(desc) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-inline: 16px;
+  }
 }
 
 .hero__title {
-    position: relative;
-    margin-top: 194px;
-    margin-bottom: 20px;
+  position: relative;
+  margin-top: 194px;
+  margin-bottom: 20px;
 
-    max-width: 218px;
-    font-family: var(--fontSecondary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
+  max-width: 218px;
+  font-family: var(--fontSecondary);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  @include mq(tab) {
+    margin-top: 87px;
+    font-size: 22px;
+    line-height: 1.18;
+    max-width: 162px;
+  }
+  @include mq(desc) {
+    margin-top: 110px;
+    font-size: 38px;
     line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
-
-    @include mq(tab) {
-        margin-top: 87px;
-        font-size: 22px;
-        line-height: 1.18;
-        max-width: 162px;
-        
-    }
-    @include mq (desc) {
-        margin-top: 110px;
-        font-size: 38px;
-        line-height: 1.15;
-        max-width: 277px;
-        margin-bottom: 40px;
-    }
+    max-width: 277px;
+    margin-bottom: 40px;
+  }
 }
 
-
 .hero__title--additional {
-    font-family: var(--fontSecondary);
-    font-style: normal;
-    font-size: 48px;
-    line-height: 96.5%;
+  font-family: var(--fontSecondary);
+  font-style: normal;
+  font-size: 48px;
+  line-height: 96.5%;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    color: #D41443;
-    @include mq (tab) {
-        font-size: 34px;
-        line-height: 90.5%;
-    }
-    @include mq(desc) {
-        font-size: 58px;
-    } 
+  color: #d41443;
+  @include mq(tab) {
+    font-size: 34px;
+    line-height: 90.5%;
+  }
+  @include mq(desc) {
+    font-size: 58px;
+  }
 }
 
 .circle {
-    position:absolute;
-    left: 36px;
-    top: -100px;    
-    border-radius: 50%;
-    width: 346px;
-    height: 344px;
-    background-color: var(--colorLabel);
-    @include mq(tab) {
-        width: 335px;
-        height: 333px;
-        left: 248px;
-        top:43px;
-    }
-    @include mq(desc) {
-        width: 534px;
-        height: 534px;
-        left: 517px;
-        top: 54px;
-    }
+  position: absolute;
+  left: 36px;
+  top: -100px;
+  border-radius: 50%;
+  width: 346px;
+  height: 344px;
+  background-color: var(--colorLabel);
+  @include mq(tab) {
+    width: 335px;
+    height: 333px;
+    left: 248px;
+    top: 43px;
+  }
+  @include mq(desc) {
+    width: 534px;
+    height: 534px;
+    left: 517px;
+    top: 54px;
+  }
 }
 
-
 .hero__list {
-    position: relative;
-    display: flex;
-    align-items: baseline;
+  position: relative;
+  display: flex;
+  align-items: baseline;
 }
 
 .hero__item {
-    display: flex;
+  display: flex;
 }
 
 .hero__item:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .hero__link {
-    font-family: var(--fontPrimary);
-    font-style: normal;
-    font-size: 8px;
-    line-height: 1.25;
-    text-align: center;
-    min-height: 24px;
-    padding: 7px 15px;
+  font-family: var(--fontPrimary);
+  font-style: normal;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+  min-height: 24px;
+  padding: 7px 15px;
 
+  border-radius: 20px;
 
-    border-radius: 20px;
-    
-    background-color: var(--colorSecondary);
-    color: var(--colorPrimary);
-    @include mq (desc) {
-        font-size: 14px;
-        line-height: 1.28;
-        padding: 11px 23px;
-   
-    }
+  background-color: var(--colorSecondary);
+  color: var(--colorPrimary);
+  @include mq(desc) {
+    font-size: 14px;
+    line-height: 1.28;
+    padding: 11px 23px;
+  }
+
+  transition-property: background-color;
+  @include transition;
+  &:hover,
+  &:focus {
+    background-color: var(--btnBgColorHoverSecondary);
+  }
 }
 
-.hero--link--secondary{
-    color:var(--colorSecondary);
-    background-color: var(--colorPrimary);
-    transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+.hero--link--secondary {
+  color: var(--colorSecondary);
+  background-color: var(--colorPrimary);
+  transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
 
-    &:hover,
-    &:focus {
-        background-color:var( --btnBgColorHover);
-    }    
+  &:hover,
+  &:focus {
+    background-color: var(--btnBgColorHover);
+  }
 }
-
-
-
 
 .hero__infographic {
-    display: none;
-    @include mq(tab) {
-        display: flex;
-    }
+  display: none;
+  @include mq(tab) {
+    display: flex;
+  }
 }
-
 
 .info__list {
-    position: absolute;
-    top: 94px;
-    right: 32px;
-    display: none;
-    @include mq (tab) {
-        display: block;
-    }
-    @include mq (desc) {
-        top:156px;
-        right: 25px;     
-    }
+  position: absolute;
+  top: 94px;
+  right: 32px;
+  display: none;
+  @include mq(tab) {
+    display: block;
+  }
+  @include mq(desc) {
+    top: 156px;
+    right: 25px;
+  }
 }
-
-
 
 .info__number {
-font-family: var(--fontSecondary);
-position: relative;
-font-size: 28px;
-line-height: 1.14;
+  font-family: var(--fontSecondary);
+  position: relative;
+  font-size: 28px;
+  line-height: 1.14;
 
-text-align: right;
-letter-spacing: 0.04em;
-text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-
-color:var(--colorSecondary);
-@include mq(desc) {
+  color: var(--colorSecondary);
+  @include mq(desc) {
     font-size: 46px;
     line-height: 1.15;
-}
+  }
 }
 
 .info__item {
-    margin-bottom: 13px;
+  margin-bottom: 13px;
 }
 
 .info__title {
-    font-family: var(--fontPrimary);
+  font-family: var(--fontPrimary);
 
-    font-size: 8px;
-    line-height: 1.25;
-    text-align: right;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
 
-    color: var(--colorPrimary);
+  color: var(--colorPrimary);
 
-    @include mq(desc) {
-        font-size: 14px;
-        line-height: 1.28;    
-    }
+  @include mq(desc) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 
-
 .info__shape {
-    position: absolute;
-    right: -7px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: var(--bgColorPrimary);
-    @include mq(desc) {
-        width: 30px;
-        height: 30px;
-    }
+  position: absolute;
+  right: -7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--bgColorPrimary);
+  @include mq(desc) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .hero__image--girl {
-    display: none;
-    @include mq(tab) {
-        display: flex;
-        position: absolute;
-        bottom: 0;
-        right: 32px;
-    }
-        @include mq(desc) {
-            right: 16px;
-        }
+  display: none;
+  @include mq(tab) {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+  }
+  @include mq(desc) {
+    right: 16px;
+  }
 }
 
 .hero__image--icecream {
-    position: absolute;
-    bottom: -158px;
-    right: 32px;
-    @include mq(tab) {
-        bottom: 0;
-        left:322px;
-    }
-    @include mq(desc) {
-        bottom: 0;
-        left: 636px;
-    }
+  position: absolute;
+  bottom: -158px;
+  right: 32px;
+  @include mq(tab) {
+    bottom: 0;
+    left: 322px;
+  }
+  @include mq(desc) {
+    bottom: 0;
+    left: 636px;
+  }
 }
 
 .hero__info {
-    position: relative;
-    display: none;
-    @include mq(tab) {
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
-     @include mq(desc) {
-         margin-top: 40px;
-     }   
-        
+  position: relative;
+  display: none;
+  @include mq(tab) {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    @include mq(desc) {
+      margin-top: 40px;
     }
+  }
 }
 
-
-
 .hero__infotext {
-    position: absolute;
-    top: 61px;
-    font-family: var(--fontPrimary);
-    font-size: 8px;
-    line-height: 150%;
-    max-width: 114px;
-    z-index:3;
-    margin-bottom: 7px;
+  position: absolute;
+  top: 61px;
+  font-family: var(--fontPrimary);
+  font-size: 8px;
+  line-height: 150%;
+  max-width: 114px;
+  z-index: 3;
+  margin-bottom: 7px;
 
-    color: var(--colorPrimary);
-    @include mq (desc){
+  color: var(--colorPrimary);
+  @include mq(desc) {
     font-size: 14px;
     line-height: 1.4;
     min-width: 200px;
     top: 68px;
-    }
-    @include mq(desc){
-        line-height: 1.5;
-    }
+  }
+  @include mq(desc) {
+    line-height: 1.5;
+  }
 }
 
 // .btn-info {
@@ -304,32 +293,28 @@ color:var(--colorSecondary);
 // }
 
 .hero__button--showmore {
-
-
-        border: 5px;
-        padding: 0px;
-        background-color: transparent;
-        background-size: contain;
-        background-image: url(../images/03-products/arrow-right.png);
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url(../images/03-products/arrow-right@2x.png);
-          
-        }
-        background-repeat: no-repeat;
-        height: 18px;
-        width: 18px;
-        display: block;
-        margin-top: 7px;
-        @include mq(desc) {
-            margin-top: 20px;
-            height: 26px;
-            width: 26px;
-        }
-        &::hover,
-        &::focus {
-            background-color: var(--btnBgColorHover);
-        }
+  border: 5px;
+  padding: 0px;
+  background-color: transparent;
+  background-size: contain;
+  background-image: url(../images/03-products/arrow-right.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/03-products/arrow-right@2x.png);
+  }
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 18px;
+  display: block;
+  margin-top: 7px;
+  @include mq(desc) {
+    margin-top: 20px;
+    height: 26px;
+    width: 26px;
+  }
+  &::hover,
+  &::focus {
+    background-color: var(--btnBgColorHover);
+  }
 }
-
