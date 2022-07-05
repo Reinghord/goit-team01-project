@@ -1,5 +1,5 @@
 .gallery-container{
-    padding: 60px 0;
+    padding-top: 60px;
     background: linear-gradient(#fff5f6 45%,
                 var(--colorPrimary) 45% 65%);
 
@@ -10,7 +10,7 @@
     }
 
     @include mq(desc){
-        padding: 120px 0;
+        padding-top: 120px;
     }
 
     & .gallery-title{
