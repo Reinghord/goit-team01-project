@@ -183,11 +183,12 @@
 .mob-menu__button {
   width: 209px;
   height: 44px;
-  margin-right: 32px;
-  margin-left: 32px;
+  margin: 0 auto;
   @include mq(tab) {
+    margin-right: 32px;
+  margin-left: 32px;
     width: 186px;
-  }
+}
 }
 
 .mob-menu__list {
