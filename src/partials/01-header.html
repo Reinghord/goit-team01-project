@@ -87,11 +87,81 @@
 <!-- Modal -->
 <div class="backdrop-header is-hidden" data-modal-header>
   <div class="modal-header">
-    <button class="modal__btn" data-modal-header-close>
-      <svg class="modal__icon" width="18" height="18">
+    <button class="modal-header__btn" data-modal-header-close>
+      <svg class="modal-header__icon" width="18" height="18">
         <use href="./images/01-header/icons.svg#close-icon"></use>
       </svg>
     </button>
-    <p class="modal__title">Buy now!</p>
+    <p class="modal-header__title">Buy now!</p>
+    <form class="fieldset">
+      <div class="fieldset__wrapper">
+        <input
+          class="fieldset__input"
+          type="text"
+          name="form-name"
+          id="form-name"
+        />
+        <svg class="fieldset__icon" width="18" height="18">
+          <use href="./images/01-header/icons.svg#icon-person-black"></use>
+        </svg>
+        <label class="fieldset__label" for="form-name">Name</label>
+      </div>
+
+      <div class="fieldset__wrapper">
+        <input
+          class="fieldset__input"
+          type="tel"
+          name="form-tel"
+          id="form-tel"
+        />
+        <svg class="fieldset__icon" width="18" height="18">
+          <use href="./images/01-header/icons.svg#icon-phone-black"></use>
+        </svg>
+        <label class="fieldset__label" for="form-tel">Telephone</label>
+      </div>
+
+      <div class="fieldset__wrapper">
+        <input
+          class="fieldset__input"
+          type="email"
+          name="form-email"
+          id="form-email"
+        />
+        <svg class="fieldset__icon" width="18" height="18">
+          <use href="./images/01-header/icons.svg#icon-email-black"></use>
+        </svg>
+        <label class="fieldset__label" for="form-email">E-mail</label>
+      </div>
+
+      <div class="fieldset__wrapper fieldset__wrapper--last">
+        <textarea
+          class="fieldset__comment"
+          name="form-comment"
+          id="form-comment"
+          rows="7"
+          placeholder="Write your order here"
+        ></textarea>
+        <label class="fieldset__label" for="form-comment">Your order</label>
+      </div>
+      <!-- Checkbox -->
+      <div class="checkbox">
+        <input
+          class="checkbox__input"
+          type="checkbox"
+          name="form-checkbox"
+          id="form-checkbox"
+        />
+        <label class="checkbox__label" for="form-checkbox">
+          <svg class="checkbox__icon" width="16" height="15">
+            <use href="./images/01-header/icons.svg#icon-check"></use>
+          </svg>
+          <span>
+            I agree to
+            <a class="checkbox__terms" href="">Terms & conditions</a>
+          </span></label
+        >
+      </div>
+      <button class="fieldset__send" type="submit">Send</button>
+    </form>
   </div>
 </div>
