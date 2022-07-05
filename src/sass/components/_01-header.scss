@@ -36,6 +36,7 @@
   min-height: 44px;
   @include mq(tab) {
     display: flex;
+    transition: backround-color 250ms ease-in-out;
   }
   &-open {
     @include mq(tab) {
@@ -73,6 +74,7 @@
 
   background-color: var(--colorPrimary);
   color: var(--colorSecondary);
+  transition: background-color 250ms ease-in-out;
 
   &:hover,
   &:focus {
