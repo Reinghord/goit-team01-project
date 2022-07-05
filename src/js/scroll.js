@@ -24,39 +24,49 @@ refs.homeButton.addEventListener('click', () => {
 });
 
 refs.reviewsButton.addEventListener('click', () => {
-  scrollTo(refs.reviewsOffset);
+  const offset = document.getElementById('reviews').offsetTop;
+  scrollTo(offset);
 });
 refs.aboutButton.addEventListener('click', () => {
-  scrollTo(refs.aboutOffset);
+  const offset = document.getElementById('about').offsetTop;
+  scrollTo(offset);
 });
 refs.productsButton.addEventListener('click', () => {
-  scrollTo(refs.productsOffset);
+  const offset = document.getElementById('products').offsetTop;
+  scrollTo(offset);
 });
 refs.contactsButton.addEventListener('click', () => {
-  scrollTo(refs.contactsOffset);
+  const offset = document.getElementById('contacts').offsetTop;
+  scrollTo(offset);
 });
 
 refs.productsHeroButton.addEventListener('click', () => {
-  scrollTo(refs.productsOffset);
+  const offset = document.getElementById('products').offsetTop;
+  scrollTo(offset);
 });
 refs.aboutHeroButton.addEventListener('click', () => {
-  scrollTo(refs.aboutOffset);
+  const offset = document.getElementById('about').offsetTop;
+  scrollTo(offset);
 });
 
 refs.homeButtonMenu.addEventListener('click', () => {
   scrollTo(refs.homeOffset);
 });
 refs.reviewsButtonMenu.addEventListener('click', () => {
-  scrollTo(refs.reviewsOffset);
+  const offset = document.getElementById('reviews').offsetTop;
+  scrollTo(offset);
 });
 refs.aboutButtonMenu.addEventListener('click', () => {
-  scrollTo(refs.aboutOffset);
+  const offset = document.getElementById('about').offsetTop;
+  scrollTo(offset);
 });
 refs.productsButtonMenu.addEventListener('click', () => {
-  scrollTo(refs.productsOffset);
+  const offset = document.getElementById('products').offsetTop;
+  scrollTo(offset);
 });
 refs.contactsButtonMenu.addEventListener('click', () => {
-  scrollTo(refs.contactsOffset);
+  const offset = document.getElementById('contacts').offsetTop;
+  scrollTo(offset);
 });
 
 refs.homeButtonBody.addEventListener('click', () => {
