@@ -292,27 +292,18 @@
   @media screen and (min-width: $desktop) {
     max-width: 528px;
   }
-  background-image: url(../images/04-about/about-bg-mob.png);
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/04-about/about-bg-mob@2x.png);
-  }
-
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0% 78%;
-
-  @media screen and (min-width: 480px) {
-    background-image: url(../images/04-about/about-bg-desk.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/04-about/about-bg-desk@2x.png);
+    background-image: url(../images/04-about/about-bg-desk-left.png),
+                      url(../images/04-about/about-bg-desk-right.png);
+  
+    background-position: left bottom 20%,
+    right bottom 20%;
+    background-repeat: no-repeat;
+    background-size: auto 250px;
+  
+    @include mq(retina) {
+      background-image: url(../images/04-about/about-bg-desk-left@2x.png),
+                        url(../images/04-about/about-bg-desk-right@2x.png);
     }
-  }
 }
 .modal-header__btn {
   width: 30px;
