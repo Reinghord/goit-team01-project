@@ -2,28 +2,37 @@
   padding-top: 60px;
 
   background-color: var(--bgColorSecondary);
-  background-image: url(../images/04-about/about-bg-mob.png);
+  background-image: url(../images/04-about/about-bg-desk-left.png),
+                    url(../images/04-about/about-bg-desk-right.png);
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/04-about/about-bg-mob@2x.png);
-  }
-
+  background-position: left bottom 20%,
+    right bottom 20%;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0% 82%;
+  background-size: auto 133px;
+
+  @include mq(retina) {
+    background-image: url(../images/04-about/about-bg-desk-left@2x.png),
+                      url(../images/04-about/about-bg-desk-right@2x.png);
+  }
 
   @media screen and (min-width: 480px) {
-    background-image: url(../images/04-about/about-bg-desk.png);
+    background-position: left bottom 12%,
+      right bottom 20%;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/04-about/about-bg-desk@2x.png);
-    }
+    background-size: auto 150px;
+
+  }
+
+  @include mq(tab-only) {
+    background-image: none
+  }
+
+  @include mq(desc) {
+    background-position: left bottom 15%, right bottom;
+    background-size: auto 460px;
   }
 }
+
 .about__container {
   padding-inline: 20px;
   margin-inline: auto;
@@ -32,11 +41,13 @@
     padding-left: 32px;
     padding-right: 34px;
   }
+
   @media screen and (min-width: $desktop) {
     padding-left: 16px;
     padding-right: 16px;
   }
 }
+
 .about__label {
   font-family: var(--fontSecondary);
   font-weight: 400;
@@ -56,12 +67,14 @@
 
     margin-bottom: 16px;
   }
+
   @media screen and (min-width: $desktop) {
     font-size: 30px;
     line-height: 1.13;
     letter-spacing: 0.04em;
   }
 }
+
 .about__title {
   font-family: var(--fontSecondary);
   font-weight: 400;
@@ -82,27 +95,33 @@
 
     margin-bottom: 40px;
   }
+
   @media screen and (min-width: $desktop) {
     font-size: 58px;
     line-height: 1.14;
     letter-spacing: 0.06em;
   }
 }
+
 .about__supwrapper {
   @media screen and (min-width: $tablet) {
     display: flex;
   }
 }
+
 .about__cow {
   margin-bottom: 40px;
+
   @media screen and (min-width: $tablet) {
     margin-bottom: 0px;
     margin-right: 32px;
   }
+
   @media screen and (min-width: $desktop) {
     margin-right: 99px;
   }
 }
+
 .about__wrapper {
   font-weight: 500;
   font-size: 12px;
@@ -116,11 +135,13 @@
 
     padding-right: 0px;
   }
+
   @media screen and (min-width: $desktop) {
     padding-top: 90px;
     padding-right: 105px;
   }
 }
+
 .about__text {
   color: var(--colorText);
 
@@ -138,6 +159,7 @@
     margin-bottom: 32px;
   }
 }
+
 .about__subtext {
   color: var(--colorSubText);
 
@@ -147,6 +169,7 @@
     letter-spacing: 0.04em;
   }
 }
+
 .about__subtext--second {
   margin-top: 10px;
 
@@ -154,6 +177,7 @@
     margin-top: 27px;
   }
 }
+
 .about__button {
   font-weight: 700;
   font-size: 14px;
@@ -182,11 +206,13 @@
 
     margin-top: 40px;
   }
+
   &:hover,
   &:focus {
     background-color: var(--btnBgColorHover);
   }
 }
+
 .about__icon {
   fill: transparent;
 
@@ -229,9 +255,11 @@
     }
   }
 }
+
 .modal-open {
   overflow: hidden;
 }
+
 .modal {
   position: absolute;
   width: calc(100% - 30px);
@@ -253,31 +281,24 @@
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
   }
+
   @media screen and (min-width: $desktop) {
     max-width: 528px;
   }
-  background-image: url(../images/04-about/about-bg-mob.png);
+
+  background-image: url(../images/04-about/about-bg-desk-left.png),
+  url(../images/04-about/about-bg-desk-right.png);
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/04-about/about-bg-mob@2x.png);
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/04-about/about-bg-desk-left@2x.png),
+                      url(../images/04-about/about-bg-desk-right@2x.png);
   }
 
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0% 78%;
-
-  @media screen and (min-width: 480px) {
-    background-image: url(../images/04-about/about-bg-desk.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/04-about/about-bg-desk@2x.png);
-    }
-  }
 }
+
 .modal__btn {
   width: 30px;
   height: 30px;
@@ -319,6 +340,7 @@
     line-height: 1.15;
   }
 }
+
 .modal__title {
   font-family: var(--fontSecondary);
   font-weight: 400;
@@ -327,12 +349,14 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+
   @media screen and (min-width: $desktop) {
     font-size: 48px;
     line-height: 1.14;
     letter-spacing: 0.06em;
   }
 }
+
 .modal__text {
   color: var(--colorText);
   text-transform: capitalize;
@@ -340,21 +364,25 @@
   font-size: 14px;
   line-height: 162%;
   margin-bottom: 10px;
+
   @media screen and (min-width: $desktop) {
     font-size: 16px;
     line-height: 176%;
     letter-spacing: 0.04em;
   }
 }
+
 .modal__subtext {
   color: var(--colorSubText);
   font-size: 14px;
   line-height: 162%;
   letter-spacing: 0.04em;
   margin-bottom: 20px;
+
   &.modal__subtext--last {
     margin-bottom: 0px;
   }
+
   @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 194%;
