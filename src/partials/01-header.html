@@ -35,7 +35,7 @@
           <use href="./images/01-header/icons.svg#burger"></use>
         </svg>
       </button>
-      <button class="header__menu-btn button btn">
+      <button class="header__menu-btn button btn" data-modal-header-open>
         Buy now
         <svg class="header__btn-icon" width="6" height="10">
           <use href="./images/01-header/icons.svg#btn-icon"></use>
@@ -46,44 +46,52 @@
 
   <!-- MOBILE MENU -->
 </header>
-    <div class="backdrop is-hidden" data-menu>
-        <div class="mob-menu mob-container">
-            
-            <button class="mob-menu__close btn" data-menu-close>
-                <svg class="close__icon" width = "20" height = "20">
-                    <use href ="./images/01-header/icons.svg#close-icon"></use>
-                </svg>
-            </button>
-            
-            <button class="mob-menu__button button btn"> Buy now
-                <svg class="header__btn-icon" width ="6" height = "10">
-                    <use href ="./images/01-header/icons.svg#btn-icon"></use>
-                </svg>
-            </button>
+<div class="backdrop is-hidden" data-menu>
+  <div class="mob-menu mob-container">
+    <button class="mob-menu__close btn" data-menu-close>
+      <svg class="close__icon" width="20" height="20">
+        <use href="./images/01-header/icons.svg#close-icon"></use>
+      </svg>
+    </button>
 
-            <ul class="mob-menu__list">
-                
-                <li class="mob-menu__item">
-                    <a href="" class="mob-menu__link mob-menu__link--current">Home</a>
-                </li>
+    <button class="mob-menu__button button btn" data-modal-header-open-second>
+      Buy now
+      <svg class="header__btn-icon" width="6" height="10">
+        <use href="./images/01-header/icons.svg#btn-icon"></use>
+      </svg>
+    </button>
 
-                <li class="mob-menu__item">
-                    <a href="" class="mob-menu__link">About us</a>
-                </li>
+    <ul class="mob-menu__list">
+      <li class="mob-menu__item">
+        <a href="" class="mob-menu__link mob-menu__link--current">Home</a>
+      </li>
 
-                <li class="mob-menu__item">
-                    <a href="" class="mob-menu__link">How it’s made?</a>
-                </li>
+      <li class="mob-menu__item">
+        <a href="#about" class="mob-menu__link">About us</a>
+      </li>
 
-                <li class="mob-menu__item">
-                    <a href="" class="mob-menu__link">Our products</a>
-                </li>
-                
-                <li class="mob-menu__item">
-                    <a href="" class="mob-menu__link">Contact</a>
-                </li>
+      <li class="mob-menu__item">
+        <a href="#about" class="mob-menu__link">How it’s made?</a>
+      </li>
 
-            </ul>
-            
-        </div>
-    </div>         
+      <li class="mob-menu__item">
+        <a href="#products" class="mob-menu__link">Our products</a>
+      </li>
+
+      <li class="mob-menu__item">
+        <a href="#contacts" class="mob-menu__link">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- Modal -->
+<div class="backdrop-header is-hidden" data-modal-header>
+  <div class="modal-header">
+    <button class="modal__btn" data-modal-header-close>
+      <svg class="modal__icon" width="18" height="18">
+        <use href="./images/01-header/icons.svg#close-icon"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Buy now!</p>
+  </div>
+</div>
