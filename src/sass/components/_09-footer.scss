@@ -175,6 +175,13 @@
 .footer__address--link {
   color: var(--colorSecondary);
   text-decoration: none;
+  transition-property: color;
+  @include transition;
+
+  &:focus,
+  &:hover {
+    color: var(--btnBgColorHoverSecondary);
+  }
 }
 
 .footer__years {
