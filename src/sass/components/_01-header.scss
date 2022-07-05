@@ -36,7 +36,7 @@
   min-height: 44px;
   @include mq(tab) {
     display: flex;
-    transition: backround-color 1250ms ease-in-out;
+    transition: backround-color 250ms ease-in-out;
   }
   &-open {
     @include mq(tab) {
