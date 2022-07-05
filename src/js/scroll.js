@@ -19,29 +19,49 @@ const refs = {
   contactsOffset: document.getElementById('contacts').offsetTop,
 };
 
-refs.homeButton.addEventListener('click', scrollTo(refs.homeOffset));
-refs.reviewsButton.addEventListener('click', scrollTo(refs.reviewsOffset));
-refs.aboutButton.addEventListener('click', scrollTo(refs.aboutOffset));
-refs.productsButton.addEventListener('click', scrollTo(refs.productsOffset));
-refs.contactsButton.addEventListener('click', scrollTo(refs.contactsOffset));
+refs.homeButton.addEventListener('click', () => {
+  scrollTo(refs.homeOffset);
+});
 
-refs.productsHeroButton.addEventListener(
-  'click',
-  scrollTo(refs.productsOffset)
-);
-refs.aboutHeroButton.addEventListener('click', scrollTo(refs.aboutOffset));
+refs.reviewsButton.addEventListener('click', () => {
+  scrollTo(refs.reviewsOffset);
+});
+refs.aboutButton.addEventListener('click', () => {
+  scrollTo(refs.aboutOffset);
+});
+refs.productsButton.addEventListener('click', () => {
+  scrollTo(refs.productsOffset);
+});
+refs.contactsButton.addEventListener('click', () => {
+  scrollTo(refs.contactsOffset);
+});
 
-refs.homeButtonMenu.addEventListener('click', scrollTo(refs.homeOffset));
-refs.reviewsButtonMenu.addEventListener('click', scrollTo(refs.reviewsOffset));
-refs.aboutButtonMenu.addEventListener('click', scrollTo(refs.aboutOffset));
-refs.productsButtonMenu.addEventListener(
-  'click',
-  scrollTo(refs.productsOffset)
-);
-refs.contactsButtonMenu.addEventListener(
-  'click',
-  scrollTo(refs.contactsOffset)
-);
+refs.productsHeroButton.addEventListener('click', () => {
+  scrollTo(refs.productsOffset);
+});
+refs.aboutHeroButton.addEventListener('click', () => {
+  scrollTo(refs.aboutOffset);
+});
+
+refs.homeButtonMenu.addEventListener('click', () => {
+  scrollTo(refs.homeOffset);
+});
+refs.reviewsButtonMenu.addEventListener('click', () => {
+  scrollTo(refs.reviewsOffset);
+});
+refs.aboutButtonMenu.addEventListener('click', () => {
+  scrollTo(refs.aboutOffset);
+});
+refs.productsButtonMenu.addEventListener('click', () => {
+  scrollTo(refs.productsOffset);
+});
+refs.contactsButtonMenu.addEventListener('click', () => {
+  scrollTo(refs.contactsOffset);
+});
+
+refs.homeButtonBody.addEventListener('click', () => {
+  scrollTo(refs.homeOffset);
+});
 
 function scrollTo(offsetTop) {
   window.scrollTo({
