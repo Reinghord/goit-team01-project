@@ -219,10 +219,10 @@
 
 // scroll-up //
 
-.scroll-up{
+.scroll-up {
   position: fixed;
-  bottom:7px;
-  right:7px;
+  bottom: 7px;
+  right: 7px;
   border: 0;
   background-color: transparent;
   z-index: 4;
@@ -231,10 +231,14 @@
     right: 15px;
   }
   @include mq(desc) {
-      bottom: 50px;
-        right: 50px;
+    bottom: 50px;
+    right: 50px;
   }
-
+  &:hover .scroll-up__icon,
+  &:focus .scroll-up__icon {
+    background-color: var(--colorSecondary);
+    fill: var(--btnBgColorHover);
+  }
 }
 
 .scroll-up__icon {
@@ -243,24 +247,16 @@
   width: 30px;
   height: 30px;
   border-radius: 10px;
-  @include mq (tab) {
-      width: 35px;
-      height: 35px;
+  @include mq(tab) {
+    width: 35px;
+    height: 35px;
   }
-    @include mq (desc) {
-        height: 50px;
-        width: 50px;
-      }
+  @include mq(desc) {
+    height: 50px;
+    width: 50px;
+  }
 
-  transition: background-color 250ms ease-in-out,
-  fill 250ms ease-in-out;
-
-
+  transition: background-color 250ms ease-in-out, fill 250ms ease-in-out;
 
   cursor: pointer;
-  &:hover,
-  &:focus {
-    background-color: var(--colorSecondary);
-    fill: var(--btnBgColorHover);
-  }
 }
