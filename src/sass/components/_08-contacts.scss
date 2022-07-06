@@ -2,22 +2,22 @@
   padding-top: 60px;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 1) 21.5%,
-    rgba(255, 245, 246, 1) 21.5%
+    rgba(255, 255, 255, 1) 26.5%,
+    rgba(255, 245, 246, 1) 26.5%
   );
   @include mq(tab) {
     background: linear-gradient(
       180deg,
-      rgba(255, 255, 255, 1) 45.5%,
-      rgba(255, 245, 246, 1) 45.5%
+      rgba(255, 255, 255, 1) 48.5%,
+      rgba(255, 245, 246, 1) 48.5%
     );
     padding-top: 80px;
   }
   @include mq(desc) {
     background: linear-gradient(
       180deg,
-      rgba(255, 255, 255, 1) 13%,
-      rgba(255, 245, 246, 1) 13%
+      rgba(255, 255, 255, 1) 28%,
+      rgba(255, 245, 246, 1) 28%
     );
     padding-top: 120px;
   }
